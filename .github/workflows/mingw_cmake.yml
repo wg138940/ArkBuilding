@@ -1,4 +1,4 @@
-name: CMake
+name: MinGW-CMake
 
 on:
   push:
@@ -33,7 +33,7 @@ jobs:
     - name: '🧰 Checkout'
       uses: actions/checkout@v2
       with:
-        submodules: 'true'
+        submodules: recursive
 
     - name: '${{ matrix.icon }} Setup MSYS2'
       uses: msys2/setup-msys2@v2
